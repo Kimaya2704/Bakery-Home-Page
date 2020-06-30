@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    /* Make sure the image takes up fullscreen width */
+    width: 100vw;
+    height: 100vh;
+
+    
+    position: relative;
+    background-image: url(img/bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+#content {
+    position: absolute;
+    background-color: rgba(97, 86, 76, 0.6);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Rendered styling */
+#main {
+    display: flex;
+    justify-content: space-between;
+    margin: 150px auto;
+    width: 1500px;
+}
+
+#logo {
+    position: relative;
+    left: 1em;
+    top: 0.5em;
+    cursor: pointer;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.restaurant-name {
+    font-family: 'Pangolin';
+    font-size: 1.9em;
+    position: relative;
+    left: 2em;
+    top: -0.5em;
+    cursor: pointer;
+}
+
+/* Position text in middle of screen */
+.center-text-container {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Nav */
+.top-navigation {
+    position: absolute;
+    margin-top: 20px;
+    right: 320px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.top-navigation li {
+    padding: 0.2em 1.5em;
+    border: 5px solid rgb(245, 243, 243);
+    border-radius: 50%;
+    margin-right: 3em;
+    cursor: pointer;
+    color: powderblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.top-navigation li:hover {
+    background-color: rgba(155, 151, 151, 0.5);
+    transition: background-color 0.1s ease-in-out;
+}
+
+.menu,
+#about-info,
+#contact-info {
+    background-color: rgba(125, 233, 236, 0.7);
+}
+
+
+/* Menu */
+.menu {
+    text-align: center;
+    width: 400px;
+    height: 460px;
+    line-height: 2.5;
+    color: purple;
+    font-size: large;
+    
+}
+
+/* About page */
+#about-info {
+    font-size: 2em;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.7;
+    padding: 1em;
+}
+
+/* Contact Page */
+#contact-info {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+#contact-info ul li {
+    list-style-type: none;
+}
